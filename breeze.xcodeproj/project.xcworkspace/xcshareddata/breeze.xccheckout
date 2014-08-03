@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>24F3EB5C-B4AE-4989-85DB-76A429B5CBE3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>breeze</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FAA9C901-6E73-4373-8EBC-A4A53EDE1E9B</key>
+		<string>https://github.com/vahtel/breeze-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>breeze.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FAA9C901-6E73-4373-8EBC-A4A53EDE1E9B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vahtel/breeze-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FAA9C901-6E73-4373-8EBC-A4A53EDE1E9B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FAA9C901-6E73-4373-8EBC-A4A53EDE1E9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>breeze-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

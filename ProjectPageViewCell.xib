@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectPageViewCell" rowHeight="227" id="KGk-i7-Jjw" customClass="ProjectPageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-iw-A19">
+                        <rect key="frame" x="20" y="10" width="280" height="110"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-2O-Tq6">
+                                <rect key="frame" x="15" y="23" width="250" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="fWp-DP-tf2"/>
+                                    <constraint firstAttribute="width" constant="250" id="hqL-KB-g3u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a00-DA-Ghh">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUL-NH-Edj">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="3sU-UV-PaG"/>
+                                    <constraint firstAttribute="width" constant="280" id="qaJ-jo-Hhy"/>
+                                </constraints>
+                            </view>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qpG-hB-9gX">
+                                <rect key="frame" x="15" y="45" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4QT-JM-oiz" customClass="UICollectionViewLeftAlignedLayout">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ap4-JD-EQg" customClass="PeoplesAvatasView">
+                                <rect key="frame" x="15" y="76" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qAu-x0-wqU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a00-DA-Ghh" secondAttribute="trailing" id="0t7-gU-32T"/>
+                            <constraint firstItem="a00-DA-Ghh" firstAttribute="leading" secondItem="OqO-iw-A19" secondAttribute="leading" id="1mQ-bd-PxS"/>
+                            <constraint firstItem="qpG-hB-9gX" firstAttribute="top" secondItem="sxE-2O-Tq6" secondAttribute="bottom" constant="2" id="3kR-jd-Qdi"/>
+                            <constraint firstItem="a00-DA-Ghh" firstAttribute="top" secondItem="OqO-iw-A19" secondAttribute="top" id="FhE-Qu-WVJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Ap4-JD-EQg" secondAttribute="bottom" constant="4" id="PP0-iz-BkP"/>
+                            <constraint firstItem="sxE-2O-Tq6" firstAttribute="leading" secondItem="OqO-iw-A19" secondAttribute="leading" constant="15" id="QH0-rN-ErW"/>
+                            <constraint firstItem="Ap4-JD-EQg" firstAttribute="top" secondItem="qpG-hB-9gX" secondAttribute="bottom" constant="1" id="V8o-al-Grm"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qpG-hB-9gX" secondAttribute="bottom" constant="5" id="WXE-di-ADS"/>
+                            <constraint firstItem="Ap4-JD-EQg" firstAttribute="leading" secondItem="OqO-iw-A19" secondAttribute="leading" constant="15" id="XTY-HG-c1I"/>
+                            <constraint firstAttribute="trailing" secondItem="Ap4-JD-EQg" secondAttribute="trailing" constant="15" id="YgP-dW-nZH"/>
+                            <constraint firstAttribute="width" constant="280" id="abd-fS-HbX"/>
+                            <constraint firstItem="sxE-2O-Tq6" firstAttribute="top" secondItem="a00-DA-Ghh" secondAttribute="bottom" constant="11" id="akY-ie-2ny"/>
+                            <constraint firstItem="qpG-hB-9gX" firstAttribute="leading" secondItem="OqO-iw-A19" secondAttribute="leading" constant="15" id="fCr-Hd-UXg"/>
+                            <constraint firstItem="qpG-hB-9gX" firstAttribute="top" secondItem="sxE-2O-Tq6" secondAttribute="bottom" constant="2" id="gNN-cp-3GW"/>
+                            <constraint firstAttribute="trailing" secondItem="qpG-hB-9gX" secondAttribute="trailing" constant="15" id="t8t-zb-CuZ"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="wjA-OI-lQw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OqO-iw-A19" secondAttribute="trailing" constant="20" id="H7L-ej-qVB"/>
+                    <constraint firstAttribute="bottom" secondItem="OqO-iw-A19" secondAttribute="bottom" constant="19" id="P6x-HM-5EH"/>
+                    <constraint firstItem="OqO-iw-A19" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="g22-ck-lM8"/>
+                    <constraint firstItem="OqO-iw-A19" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="h2Z-PA-PVf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarsViewHeight" destination="qAu-x0-wqU" id="4W8-vM-S50"/>
+                <outlet property="contentBackgroundView" destination="OqO-iw-A19" id="kv4-eb-8pG"/>
+                <outlet property="contentName" destination="sxE-2O-Tq6" id="yts-Mz-h4a"/>
+                <outlet property="iconsCollection" destination="qpG-hB-9gX" id="TCl-de-H9F"/>
+                <outlet property="peoplesAvatarsView" destination="Ap4-JD-EQg" id="8rW-yM-2qD"/>
+                <outlet property="statusBackground" destination="a00-DA-Ghh" id="5yg-BH-ktE"/>
+                <outlet property="statusHeaderHeight" destination="3sU-UV-PaG" id="JEM-wo-ZAs"/>
+                <outlet property="statusLabel" destination="lUL-NH-Edj" id="Cvt-S0-vtx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

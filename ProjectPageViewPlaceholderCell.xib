@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectPageViewPlaceholderCell" id="KGk-i7-Jjw" customClass="ProjectPageViewPlaceholderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-h8-4fT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TRb-h8-4fT" secondAttribute="bottom" id="3ur-QV-nH8"/>
+                    <constraint firstAttribute="trailing" secondItem="TRb-h8-4fT" secondAttribute="trailing" id="4Qt-yj-bNB"/>
+                    <constraint firstItem="TRb-h8-4fT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TcA-m0-Fzf"/>
+                    <constraint firstItem="TRb-h8-4fT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e0U-dE-Ifj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeholderImageView" destination="TRb-h8-4fT" id="Y3S-cY-MgP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

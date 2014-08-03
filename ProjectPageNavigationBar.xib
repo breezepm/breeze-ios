@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="projectPageNavigationBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjX-fx-Udh">
+                    <rect key="frame" x="0.0" y="2" width="320" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="UI1-GA-2Xn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2C-56-tMC">
+                    <rect key="frame" x="0.0" y="22" width="320" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="NO9-IJ-TAI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sjX-fx-Udh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7iS-Sx-zsR"/>
+                <constraint firstItem="z2C-56-tMC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MCs-ng-Za9"/>
+                <constraint firstItem="z2C-56-tMC" firstAttribute="top" secondItem="sjX-fx-Udh" secondAttribute="bottom" id="Sl2-jI-fyr"/>
+                <constraint firstItem="z2C-56-tMC" firstAttribute="top" secondItem="sjX-fx-Udh" secondAttribute="bottom" id="VJ2-LT-DAE"/>
+                <constraint firstAttribute="bottom" secondItem="z2C-56-tMC" secondAttribute="bottom" id="Xie-NT-Ido"/>
+                <constraint firstAttribute="trailing" secondItem="sjX-fx-Udh" secondAttribute="trailing" id="aKU-mG-0eT"/>
+                <constraint firstAttribute="trailing" secondItem="z2C-56-tMC" secondAttribute="trailing" id="c5U-HC-Jkz"/>
+                <constraint firstItem="sjX-fx-Udh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="mvF-CX-yg7"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="z2C-56-tMC" id="CaF-sn-PWI"/>
+                <outlet property="titleLabel" destination="sjX-fx-Udh" id="pE0-eG-cOR"/>
+            </connections>
+        </view>
+    </objects>
+</document>

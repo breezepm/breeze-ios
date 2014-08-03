@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimesIconCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="lXy-hR-PpB">
+                    <rect key="frame" x="3" y="3" width="14" height="14"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="bqP-Tr-bYS"/>
+                        <constraint firstAttribute="height" constant="14" id="eBV-dB-0FD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud0-jP-TLS">
+                    <rect key="frame" x="20" y="0.0" width="80" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ud0-jP-TLS" secondAttribute="bottom" id="BcD-Xk-aR9"/>
+                <constraint firstAttribute="trailing" secondItem="Ud0-jP-TLS" secondAttribute="trailing" id="EOb-NY-NFA"/>
+                <constraint firstItem="lXy-hR-PpB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="L3e-pt-0UG"/>
+                <constraint firstItem="Ud0-jP-TLS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OC9-hM-DPd"/>
+                <constraint firstItem="Ud0-jP-TLS" firstAttribute="leading" secondItem="lXy-hR-PpB" secondAttribute="trailing" constant="3" id="uwS-hl-isn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clockImage" destination="lXy-hR-PpB" id="gtV-pC-O9l"/>
+                <outlet property="timesTextLabel" destination="Ud0-jP-TLS" id="inW-cp-Vya"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="clock" width="24" height="24"/>
+    </resources>
+</document>
